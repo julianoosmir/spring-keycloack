@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  keyclock_server:
+    image: jboss/keycloak
+    container_name: keyclock
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    ports:
+      - 8180:8080
